@@ -3,6 +3,8 @@
 
 #include "WiFi.h"
 
+extern State st;
+
 void r_localTime(AsyncWebServerRequest *request){
 	String message;
 	message += hour();
@@ -11,4 +13,14 @@ void r_localTime(AsyncWebServerRequest *request){
 	message += ":";
 	message += second();
 	request->send(200, "text/plain", message);
+}
+
+void r_handleCommand(AsyncWebServerRequest *request){
+	String message;
+	if(request->hasParam("mode")){
+		String cmd = request->getParam("mode")->value();
+		if(cmd == "clock"){
+			
+		}
+	}
 }
