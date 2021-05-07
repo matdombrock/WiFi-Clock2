@@ -8,6 +8,9 @@
 #include "weather.h"
 #include "routes.h"
 
+#include "setupMatrix.h"
+#include "matrixBorders.h"
+#include "modes.h"
 
 State st;
 
