@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-#include "getTime.h"
+#include "networkTime.h"
 
 #include "zIOTBP32/zsetupBP.h"// Required
 
