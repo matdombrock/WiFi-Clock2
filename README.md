@@ -9,9 +9,17 @@ This is a work in progress rewrite of my original [WiFi Clock](https://github.co
 
 First it will start a soft AP using a captive (sign in) portal. This lets you connect the device to your WiFi network.
 
+Connect to the SSID: **WIFICLOCK**
+
+Enter your real SSID and password on the setup page.
+
+Click **"CONNECT"**.
+
 Then you are able to use a web based UI (either served from the device itself or locally) to control the clock.
 
-You will never have to manually adjust this clock and it will always be perfectly in sync with the clock on your phone and computer (via [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol)). It also has an onboard temp/humidity sensor (DHT11) for getting local environmental readings.
+The web UI can be accessed either from `http://<deviceIP>/app` or by directly opening the `ui/index.html` file in your browser.
+
+*You will never have to manually adjust this clock and it will always be perfectly in sync with the clock on your phone and computer (via [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol)). It also has an onboard temp/humidity sensor (DHT11) for getting local environmental readings.*
 
 Using the web UI, you can control lots of things like the brightness of the LEDs, the border, the mode (clock, temp/humidity ect.).
 
