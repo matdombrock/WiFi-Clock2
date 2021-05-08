@@ -13,17 +13,23 @@ This is a work in progress rewrite of my original [WiFi Clock](https://github.co
 * Display external ([web based](https://github.com/chubin/wttr.in)) weather conditions.
 * USB Powered.
 
-## Requires
+## Required Libraries
 * [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
 * [Time](https://github.com/PaulStoffregen/Time)
 * [MatrixGL](https://github.com/matdombrock/MatrixGL)
+
+## Required Components
+* ESP32 Dev Board
+* 4x MAX72xx LED Matrix Displays
+* DHT11
+* Jumper cables and breadboards.  
+* 3D Printer (optional)
 
 ## Printing the housing
 See the [Housing README](housing/README.md)
 ![housing-screenshot](housing/screenshot.png)
 
 ## UI Screenshots
-
 ![desktop-ui](images/ui-desktop.png)
 ![mobile-ui](images/ui-mobile.png)
 
