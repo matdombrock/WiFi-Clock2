@@ -26,7 +26,7 @@ This is a work in progress rewrite of my original [WiFi Clock](https://github.co
 * 3D Printer (optional)
 
 ## Printing the housing
-See the [Housing README](housing/README.md)
+See the [Housing README](housing)
 ![housing-screenshot](housing/screenshot.png)
 
 ## UI Screenshots
