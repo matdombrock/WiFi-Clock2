@@ -16,11 +16,7 @@ State st;
 
 void setup() {
     Serial.begin(115200);
-    /*
-    * void setupBP(const char *apName="ESP SETUP", const char *ssid=NULL, const char *pkey=NULL)
-    */
     setupBP("WiFiClock", "HERSHEL", "meowmeow");// Required
-
     st.lenX = matrix.lenX()-1;
     st.lenY =  matrix.lenY()-1;
     // Setup DHT
@@ -39,10 +35,7 @@ void setup() {
 }
 
 void loop() {
-  //
-  loopBP();// Required
-  //
-  //checkBtn();
+  loopBP();
   runMode(matrix, st);
   runBorder(matrix, st);
   matrix.delayF();
