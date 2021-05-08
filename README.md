@@ -19,7 +19,7 @@ This is a work in progress rewrite of my original [WiFi Clock](https://github.co
 * [MatrixGL](https://github.com/matdombrock/MatrixGL)
 
 ## Printing the housing
-See the [Housing README](housing/README.me)
+See the [Housing README](housing/README.md)
 ![housing-screenshot](housing/screenshot.png)
 
 ## UI Screenshots
