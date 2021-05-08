@@ -25,6 +25,13 @@ This is a work in progress rewrite of my original [WiFi Clock](https://github.co
 * Jumper cables and breadboards.  
 * 3D Printer (optional)
 
+## Wiring
+* ESP32: Pin 18 (or SCK)  -> Matrix: CLK
+* ESP32: Pin 23 (or MOSI) -> Matrix: DATA
+* ESP32: Pin 5 (or SS)    -> Matrix: CS
+ 
+* ESP32: Pin 17           -> DHT: Out
+
 ## Printing the housing
 See the [Housing README](housing)
 ![housing-screenshot](housing/screenshot.png)
