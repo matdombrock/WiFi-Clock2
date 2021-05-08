@@ -30,7 +30,4 @@ See the [Housing README](housing/README.md)
 ## More Device Images
 ![clock](images/clock1.jpg)
 ![dht](images/clock-dht.jpg)
-![clock](images/clock2.jpg)
-![clock](images/clock3.jpg)
-![top](images/clock-top.jpg)
 ![wiring](images/clock-wiring.jpg)
