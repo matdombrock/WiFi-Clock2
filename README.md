@@ -26,6 +26,8 @@ This is a work in progress rewrite of my original [WiFi Clock](https://github.co
 * 3D Printer (optional)
 
 ## Wiring
+All devices powered in parallel on 3.3v.
+
 * ESP32: Pin 18 (or SCK)  -> Matrix: CLK
 * ESP32: Pin 23 (or MOSI) -> Matrix: DATA
 * ESP32: Pin 5 (or SS)    -> Matrix: CS
