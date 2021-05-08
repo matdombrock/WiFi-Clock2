@@ -1,7 +1,7 @@
 # Housing
 The 3D files are located in the [housing]() directory.
 
-<script src="https://embed.github.com/view/3d//matdombrock/WiFi-Clock2/blob/master/housing/WiFi_Clock_Housing.stl"></script>
+[Preview Housing On Github](https://github.com/matdombrock/WiFi-Clock2/blob/master/housing/WiFi_Clock_Housing.stl)
 
 ![screenshot](screenshot.png)
 

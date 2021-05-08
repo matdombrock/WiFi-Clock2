@@ -91,4 +91,7 @@ Set the time.
 
 ## Printing the housing
 See the [Housing README](housing)
+
+[Preview Housing On Github](https://github.com/matdombrock/WiFi-Clock2/blob/master/housing/WiFi_Clock_Housing.stl)
+
 ![housing-screenshot](housing/screenshot.png)
