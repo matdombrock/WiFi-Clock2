@@ -9,13 +9,15 @@ This is a work in progress rewrite of my original [WiFi Clock](https://github.co
 
 First it will start a soft AP using a captive (sign in) portal. This lets you connect the device to your WiFi network.
 
-Connect to the SSID: **WIFICLOCK**
+Connect to the AP: **WIFICLOCK**
 
 Enter your real SSID and password on the setup page.
 
 Click **"CONNECT"**.
 
-Then you are able to use a web based UI (either served from the device itself or locally) to control the clock.
+Disconnect from the **WIFICLOCK** AP and connect to your real AP.
+
+Now you are able to use a web based UI (either served from the device itself or locally) to control the clock.
 
 The web UI can be accessed either from `http://<deviceIP>/app` or by directly opening the `ui/index.html` file in your browser.
 
