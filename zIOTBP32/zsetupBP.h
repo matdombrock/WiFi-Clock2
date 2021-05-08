@@ -40,5 +40,6 @@ void setupBP(const char *apName="ESP SETUP", const char *ssid=NULL, const char *
   WiFi.softAP(apName);
   dnsServer.start(53, "*", WiFi.softAPIP());
   server.addHandler(new CaptiveRequestHandler()).setFilter(ON_AP_FILTER);//only when requested from AP
+  DefaultHeaders::Instance().addHeader("Access-Control-Allow-Origin", "*");
   server.begin();
 }

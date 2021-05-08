@@ -18,7 +18,6 @@ void println(MatrixGL &matrix, String str){
 }
 
 void say(MatrixGL matrix, State st){
-  Serial.println(st.storedText);
   println(matrix, st.storedText);
 }
 void drawDHT(MatrixGL matrix, State st){

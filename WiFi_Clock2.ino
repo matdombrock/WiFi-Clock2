@@ -82,6 +82,7 @@ void setup() {
     server.on("/say", HTTP_GET, r_say);
     server.on("/state", HTTP_GET, r_state);
     server.on("/syncTime", HTTP_GET, r_syncTime);
+    server.on("/app", HTTP_GET, r_app);
     setupTime();
     getWeather();
 }
