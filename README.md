@@ -5,9 +5,20 @@
 
 This is a work in progress rewrite of my original [WiFi Clock](https://github.com/matdombrock/WIFI-Clock). It's being rewritten to use my [zIOTBP32 Biolerplate](https://github.com/matdombrock/zIOTBP32) which enabled a soft AP for confiuguring WiFi access as well as many other quality of life features. 
 
+## How It Works
+
+First it will start a soft AP using a captive (sign in) portal. This lets you connect the device to your WiFi network.
+
+Then you are able to use a web based UI (either served from the device itself or locally) to control the clock.
+
+You will never have to manually adjust this clock and it will always be perfectly in sync with the clock on your phone and computer (via [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol)). It also has an onboard temp/humidity sensor (DHT11) for getting local environmental readings.
+
+Using the web UI, you can control lots of things like the brightness of the LEDs, the border, the mode (clock, temp/humidity ect.).
+
 ## Features
 * Soft AP for configuring WiFi credentials.
-* Serverless web based UI.
+* Web based UI.
+* Automatic state syncing between the device and the UI.
 * Automatic [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) time fetching. 
 * Display local (indoor) temperature and humidity readings using an onboard sensor.
 * Display external ([web based](https://github.com/chubin/wttr.in)) weather conditions.
