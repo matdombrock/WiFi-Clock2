@@ -1,5 +1,5 @@
 # Housing
-These are the 3d files for the housing I used. 
+The 3D files are located in the [housing](housing/) directory.
 
 ![screenshot](screenshot.png)
 
