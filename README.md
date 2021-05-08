@@ -8,7 +8,7 @@ This is a work in progress rewrite of my original [WiFi Clock](https://github.co
 ## Features
 * Soft AP for configuring WiFi credentials.
 * Serverless web based UI.
-* Automatic [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol#:~:text=The%20Network%20Time%20Protocol%20(NTP,of%20the%20University%20of%20Delaware.) time fetching. 
+* Automatic [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) time fetching. 
 * Display local (indoor) temperature and humidity readings using an onboard sensor.
 * Display external ([web based](https://github.com/chubin/wttr.in)) weather conditions.
 * USB Powered.
