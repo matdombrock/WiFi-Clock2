@@ -1,6 +1,7 @@
 #include <MatrixGL.h>
 #include "State.h"
 #include "zDHT.h"
+#include "updateClock.h"
 
 void println(MatrixGL &matrix, String str){
   char buf[6];
@@ -17,6 +18,7 @@ void println(MatrixGL &matrix, String str){
 }
 
 void say(MatrixGL matrix, State st){
+  Serial.println(st.storedText);
   println(matrix, st.storedText);
 }
 void drawDHT(MatrixGL matrix, State st){
@@ -39,6 +41,7 @@ void demoRandomNoise(MatrixGL &matrix){
 }
 
 void drawClock(MatrixGL &matrix, State &st){
+  updateClock(st);
   // Skip if time has not changed
   if(st.localTime[3] != st.lastMin){
     matrix.lock();
@@ -57,21 +60,37 @@ void drawClock(MatrixGL &matrix, State &st){
 * RUN CURRENT MODE
 */
 void runMode(MatrixGL &matrix, State &st){
-   switch(st.mode){
-    case 0:
-      drawClock(matrix, st);
-      break;
-    case 1:
-      demoRandomNoise(matrix);
-      break;
-    case 2:
-      say(matrix, st);
-      break;
-    case 3:
-      drawDHT(matrix, st);
-      break;
-    default:
-      drawClock(matrix, st);
-      break;
-   }
+  if(st.mode == "clock"){
+    drawClock(matrix, st);
+  }
+  else if(st.mode == "demo"){
+    demoRandomNoise(matrix);
+  }
+  else if(st.mode == "say"){
+    say(matrix, st);
+  }
+  else if(st.mode == "dht"){
+    drawDHT(matrix, st);
+  }
+  else{
+    drawClock(matrix, st);
+    st.mode="clock";
+  }
+  // switch(st.mode){
+  //   case ml.clock:
+  //     drawClock(matrix, st);
+  //     break;
+  //   case 1:
+  //     demoRandomNoise(matrix);
+  //     break;
+  //   case 2:
+  //     say(matrix, st);
+  //     break;
+  //   case 3:
+  //     drawDHT(matrix, st);
+  //     break;
+  //   default:
+  //     drawClock(matrix, st);
+  //     break;
+  // }
 }

@@ -66,6 +66,7 @@ void border3(MatrixGL &matrix, State &st){
 void runBorder(MatrixGL &matrix, State &st){
   switch (st.modeB){
     case 0:
+      clearBorder(matrix, st);
       break;
     case 1:
       border(matrix, st);
@@ -77,6 +78,8 @@ void runBorder(MatrixGL &matrix, State &st){
       border3(matrix, st);
       break;
     default:
+      clearBorder(matrix, st);
+      st.modeB=0;
       break;
   }
 }
