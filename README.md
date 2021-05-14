@@ -55,6 +55,12 @@ All devices powered in parallel on 3.3v.
  
 * ESP32: Pin 17           -> DHT: Out
 
+![wiring](kicad/Screenshot.png)
+
+[Full Kicad files in Repo](kicad)
+
+[Full resolution diagram only](kicad/Full.png)
+
 ## Web UI
 ![desktop-ui](images/ui-desktop.png)
 
