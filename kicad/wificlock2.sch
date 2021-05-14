@@ -7,10 +7,10 @@ Sheet 1 1
 Title "Wifi Clock 2"
 Date "2021-05-13"
 Rev ""
-Comp "Mathieu Dombrock"
-Comment1 "GPL3"
-Comment2 ""
-Comment3 ""
+Comp "https://github.com/matdombrock/WiFi-Clock2"
+Comment1 "All devices powered from 3.3v"
+Comment2 "Mathieu Dombrock"
+Comment3 "GLP3"
 Comment4 ""
 $EndDescr
 $Comp
@@ -76,7 +76,7 @@ Wire Wire Line
 	6750 3900 7400 3900
 Wire Wire Line
 	7250 3200 7250 5500
-Text Notes 8150 6950 0    50   ~ 0
+Text Notes 9550 7000 0    50   ~ 0
 ESP32: Pin 18 (or SCK) -> Matrix: CLK\nESP32: Pin 23 (or MOSI) -> Matrix: DATA\nESP32: Pin 5 (or SS) -> Matrix: CS\nESP32: Pin 17 -> DHT: Out
 $Comp
 L Driver_LED:MAX7219 U1

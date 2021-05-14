@@ -89,4 +89,11 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 7900 40
 	1    7850 4150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6150 2600 6150 2550
+Wire Wire Line
+	6150 2550 7850 2550
+Wire Wire Line
+	7850 2550 7850 3150
+Connection ~ 6150 2600
 $EndSCHEMATC
