@@ -53,7 +53,7 @@
   </div>
 </div>
 <script>
-  const deviceURL = 'http://192.168.1.5';
+  const deviceURL = 'http://192.168.1.10';
 
   const loading = document.getElementById('loading');
   const mode = document.getElementById('mode');
@@ -132,7 +132,7 @@
     };
     const d = new Date();
     const hour = d.getHours();
-    const minute = d.getHours();
+    const minute = d.getMinutes();
     const second = d.getSeconds();
     xhttp.open("GET", deviceURL + '/syncTime?hour='+hour+'&minute='+minute+'&second='+second, true);
     xhttp.send();
